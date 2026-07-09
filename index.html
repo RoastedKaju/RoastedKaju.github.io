@@ -1,414 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haris Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Haris's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- About Me Section -->
-        <section class="about-section">
-            <h1>R.Haris Nauman</h1>
-            <p>
-                I am a C++ Programmer with skillset in <strong>Qt/QML</strong>, <strong>Unreal Engine</strong>, Graphics and Shader Programming with GLSL.
-                <br><br>
-                Familiar with developing applications for both <strong>Windows</strong> and <strong>Linux</strong> based operating systems.
-            </p>
+    <nav class="sidebar">
+        <h2>Navigation</h2>
+
+        <ul>
+            <li style="color: #e67e22;"><a href="index.html" style="color: #e67e22;">Home</a></li>
+        </ul>
+
+        <h4>Projects</h4>
+        <ul>
+            <li><a href="qt.html">Qt</a></li>
+            <li><a href="graphics.html">Graphics</a></li>
+            <li><a href="unreal.html">Unreal Engine</a></li>
+            <li><a href="others.html">Others</a></li>
+        </ul>
+
+        <h4>Misc</h4>
+        <ul>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/rhn-127405227/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/RoastedKaju" target="_blank">GitHub</a></li>
+            <li><a href="https://haris-nauman.itch.io/" target="_blank">Itch.io</a></li>
+            <li><a href="https://vimeo.com/user235186708" target="_blank">Vimeo</a></li>
+            <li><a href="https://www.youtube.com/@RoastedKaju" target="_blank">YouTube</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h1 style="color: #e67e22;">RAJA HARIS NAUMAN</h1>
+            <p style="font-size: large;">Systems engineer passionate about real-time applications and low-level
+                programming.</p>
+            <p style="font-size: large;">Building high-performance software.</p>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects-section">
-            <h2>PROJECTS</h2>
-            
-            <!-- Professional Projects -->
-            <div class="project-category">
-                <h3 class="category-title">Professional</h3>
-                <div class="projects-grid">
-                    <a href="https://oceanx.org/education/multimedia-learning/" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <img src="images/oceanX.jpg" alt="Project Name" class="project-image">
-                        <div class="project-content">
-                            <h4>OceanX Dome Experience</h4>
-                            <p>Immersive projection domes for Abu-Dhabi and Malaysia.</p>
-                        </div>
+        <!-- Highlights -->
+        <section id="highlights">
+            <h2>Highlights</h2>
+            <!-- Highlight 1 -->
+            <div class="highlight-container">
+                <div class="highlight-card">
+                    <div class="header">
+                        <h3>Shader Toy</h3>
+                        <p>Real-time Vulkan shader playground.</p>
                     </div>
-                    </a>
-                    <a href="https://store.steampowered.com/app/505740/Eximius_Seize_the_Frontline/" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <img src="images/eximius.jpg" alt="Project Name" class="project-image">
-                        <div class="project-content">
-                            <h4>Eximius</h4>
-                            <p>FPS/RTS hybrid that focuses on squad-based combat</p>
-                        </div>
+                    <div class="image-container">
+                        <img src="images/ShaderToy.jpg" alt="Shader Toy">
                     </div>
-                    </a>
-                    <a href="https://www.nintendo.com/us/store/products/bake-n-switch-switch/" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <img src="images/bns.jpg" alt="Project Name" class="project-image">
-                        <div class="project-content">
-                            <h4>Bake'n Switch</h4>
-                            <p>Couch co-op and PvP party game for 1-4 players</p>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="https://mdec.my/ip360-metaverse" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <img src="images/ip360.jpg" alt="Project Name" class="project-image">
-                        <div class="project-content">
-                            <h4>IP360 Metaverse</h4>
-                            <p>IP360 platform aims to showcase Malaysia's cultural richness and digital creativity to a global audience</p>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="https://www.indiedb.com/games/the-lays-of-althas-sundered-order" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <img src="images/loa.jpg" alt="Project Name" class="project-image">
-                        <div class="project-content">
-                            <h4>The Lays of Althas</h4>
-                            <p>Single-player, medieval-low-fantasy RPG</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Personal Projects -->
-            <div class="project-category">
-                <h3 class="category-title">Personal</h3>
-                
-                <!-- Unreal Engine -->
-                <div class="framework-section">
-                    <h4 class="framework-title">
-                        <span class="framework-icon">🎮</span> Unreal Engine
-                    </h4>
-                    <div class="projects-grid">
-                        <a href="https://github.com/RoastedKaju/UE5-CompositeLensFlare-Plugin" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/lens_car.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Custom Lens Flare Pass</h4>
-                                <p>A Composite Lens flare plugin based on froyok's Implementation made for binary versions of Unreal Engine.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/UE5-Omnia-Camera" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/camera.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>O-Camera Plugin</h4>
-                                <p>An Extended and Modular Plugin based version of Lyra Camera for Unreal Engine 5, Blueprint Friendly And Can be used without GAS.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://vimeo.com/1055418429" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/splineForest.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Spline Forest</h4>
-                                <p>Inspired by ARMA Reforger's Enfusion Engine modding kit.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://vimeo.com/1055419061" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/vectorField.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Vector Field</h4>
-                                <p>Goal oriented vector field pathfinding with physics enabled agents.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/UE5-Aim-Assist-Plugin" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/aim.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Aim Assist Plugin</h4>
-                                <p>Aim Assist With togglable stickiness and magnetism.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/UE5-GamepadUMG" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/gamepad.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Gamepad UMG</h4>
-                                <p>Plugin for Gamepad to simulate virtual mouse cursor and clicks.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/rolling-quest" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/rolling.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Rolling Quest</h4>
-                                <p>Physics based ball on board Game, uses Geometry scripting to make levels procedurally.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/tonks" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/tonks.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Tonks</h4>
-                                <p>Free For All Multiplayer Tank battle Game.</p>
-                            </div>
-                        </div>
-                        </a>
+                    <div class="footer">
+                        <div>Vulkan</div>
+                        <div>C++ 20</div>
+                        <div><a href="https://github.com/RoastedKaju/Vulkan-ShaderToy" target="_blank">Code</a></div>
                     </div>
                 </div>
-
-                <!-- OpenGL -->
-                <div class="framework-section">
-                    <h4 class="framework-title">
-                        <span class="framework-icon">🔺</span> Vulkan/OpenGL
-                    </h4>
-                    <div class="projects-grid">
-                        <a href="https://github.com/RoastedKaju/Vulkan-ShaderToy" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/shader_toy.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Vulkan Shader-Toy</h4>
-                                <p>A Shader Toy like Application made using Vulkan 1.3</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/OpenGL-Catmull-Rom-Spline" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/cat.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Catmull-Rom Splines</h4>
-                                <p>Spline visualizer made in OpenGL.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/OpenGL-Solar-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/solar.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Solar System</h4>
-                                <p>Solar System Made Using OpenGL 3.3, GLFW and ImGUI. C++ Standard 17 Used.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/opengl-boidsflocking-simulation" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/boids.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Boids</h4>
-                                <p>This Simulation was created using C++ with OpenGL, GLFW, ImGUI. </p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/LVK-Spheres" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/spheres.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Vulkan Spheres</h4>
-                                <p>Procedural sphere generator for Lightweight Vulkan, Contains UV and Icosphere. </p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/LVK-Shading" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/shading.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Shading Playground</h4>
-                                <p>Contains examples of different types of shading modes and practices. Includes different models and collection of tweakable settings. </p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Vulkan-Sample" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/vulkanSample.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Vulkan Sample</h4>
-                                <p>Created as a good reference point for future Vulkan 1.4 Projects. </p>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Highlight 2 -->
+                <div class="highlight-card">
+                    <div class="header">
+                        <h3>OceanX Simulator</h3>
+                        <p>Immersive projection domes and extended reality.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/OceanX.jpg" alt="OceanX Simulator">
+                    </div>
+                    <div class="footer">
+                        <div>Unreal Engine</div>
+                        <div>C++ 20</div>
+                        <div><a href="https://oceanx.org/education/multimedia-learning/" target="_blank">View</a></div>
                     </div>
                 </div>
-
-                <!-- Others -->
-                <div class="framework-section">
-                    <h4 class="framework-title">
-                        <span class="framework-icon">🎯</span> Others
-                    </h4>
-                    <div class="projects-grid">
-                        <a href="https://github.com/RoastedKaju/Open-Weather-Desktop" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/open.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Open Weather Desktop</h4>
-                                <p>C++ Desktop Application that fetches data from OpenWeatherAPI.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/john-conways-game-of-life" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/game.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Game of Life</h4>
-                                <p>John Conway's game of life implementation in C++/SFML.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/tetris-clone" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/tetris.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Tetris</h4>
-                                <p>Tetris Clone created in C++ using SFML.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://haris-nauman.itch.io/space-invaders" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/space.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Space Invaders</h4>
-                                <p>A Space Invaders Clone made with modern C++ and SFML.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Event-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/mail.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Event System</h4>
-                                <p>Simple event system made in C++ for learning purposes.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/HTTP-Server" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/server.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Simple HTTP Server</h4>
-                                <p>A simple HTTP server written in C langauge, implements 400, 404, 405 and 500 response functionality.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Entity-Component-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/ecs.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Entity Component System</h4>
-                                <p>Made with C++ 20, SDL3</p>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Highlight 3 -->
+                <div class="highlight-card">
+                    <div class="header">
+                        <h3>Chat Room</h3>
+                        <p>Qt-TCP chat application.</p>
                     </div>
-                </div>
-
-                <!-- Qt -->
-                <div class="framework-section">
-                    <h4 class="framework-title">
-                        <span class="framework-icon">⚙️</span> Qt-Framework
-                    </h4>
-                    <div class="projects-grid">
-                        <a href="https://github.com/RoastedKaju/Qt-Markdown-Viewer" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/mark.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Markdown Viewer</h4>
-                                <p>Made using Qt framework and C++ along with CMARK.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Qt-Chat-Application" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/chat.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Chat Application</h4>
-                                <p>Made using Qt framework and C++. Two projects server and GUI based client.</p>
-                            </div>
-                        </div>
-                        </a>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/QML-SignIn-Frontend" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/SigninFrontend.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Sign-In Frontend</h4>
-                                <p>A generic Sign in frontend for applications with frameless window.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/QML-UploadFrontend" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/upload_form.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Form Frontend</h4>
-                                <p>Just a frontend for file upload form, List View Demo.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/QML-Podcast-Registration" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/registration.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Registration Form</h4>
-                                <p>Made using QtQuick QML.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Qt-SystemMonitor" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/systemInfo.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>System Info Monitor</h4>
-                                <p>QML based System Information Monitor with C++ backend.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/Qt-TodoApplication" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/todoApp.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>To-Do List</h4>
-                                <p>A sticky note style to-do application for windows, made using C++ and QML.</p>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="https://github.com/RoastedKaju/QML-VideoEditor" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <div class="project-card">
-                            <img src="images/gif_converter.jpg" alt="Project Name" class="project-image">
-                            <div class="project-content">
-                                <h4>Gif Converter</h4>
-                                <p>Lightweight video editor made in Qt Framework using FFMPEG.</p>
-                            </div>
-                        </div>
-                        </a>
+                    <div class="image-container">
+                        <img src="images/ChatApplication.jpg" alt="Chat Room">
+                    </div>
+                    <div class="footer">
+                        <div>Qt</div>
+                        <div>C++ 17</div>
+                        <div><a href="https://github.com/RoastedKaju/Qt-Chat-Application" target="_blank">Code</a></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certificates Section -->
-        <section class="contact-section">
-            <h2>CERTIFICATES</h2>
-            <div class="contact-buttons">
-                <a href="https://simpli-web.app.link/e/ShSMDBnHTQb" class="contact-btn" target="_blank" rel="noopener noreferrer">Programming with Python 3.X</a>
-                <a href="https://www.udemy.com/certificate/UC-5ff9e683-8aba-440a-a9cf-392005e0ee79/" class="contact-btn" target="_blank" rel="noopener noreferrer">Computer Graphics with Modern OpenGL</a>
-                <a href="https://simpli-web.app.link/e/nv9Y3knBTQb" class="contact-btn" target="_blank" rel="noopener noreferrer">Introduction to Devops Tools </a>
-                <a href="https://www.udemy.com/certificate/UC-286cf04f-b92b-41f9-ae56-d5c0b6b6c6d1/" class="contact-btn" target="_blank" rel="noopener noreferrer">Unreal Engine 5 C++: Create Custom Editor Tools</a>
+        <!-- Technologies -->
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <div class="badge-container">
+                <span class="badge" style="background-color: lightskyblue;">C++</span>
+                <span class="badge" style="background-color: lightsteelblue;">C</span>
+                <span class="badge" style="background-color: purple;">C#</span>
+                <span class="badge" style="background-color: peru;">CMake</span>
+                <span class="badge" style="background-color: orange;">Unreal Engine</span>
+                <span class="badge" style="background-color: red;">Vulkan</span>
+                <span class="badge" style="background-color: skyblue;">OpenGL</span>
+                <span class="badge" style="background-color: blue;">uC-OS-II</span>
+                <span class="badge" style="background-color: green;">Qt-Framework</span>
+                <span class="badge" style="background-color: orangered;">SDL3/GLFW/SFML</span>
+                <span class="badge" style="background-color: grey;">ImGUI</span>
+                <span class="badge" style="background-color: brown;">Jenkins</span>
+                <span class="badge" style="background-color: darkkhaki;">Google-Test</span>
+                <span class="badge" style="background-color: goldenrod;">Python</span>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <h2>CONNECT WITH ME</h2>
-            <div class="contact-buttons">
-                <a href="https://haris-nauman.itch.io/" class="contact-btn" target="_blank" rel="noopener noreferrer">Itch.io</a>
-                <a href="https://www.linkedin.com/in/rhn-127405227/" class="contact-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/RoastedKaju" class="contact-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://vimeo.com/user235186708" class="contact-btn" target="_blank" rel="noopener noreferrer">Vimeo</a>
-                <a href="https://dev.epicgames.com/community/profile/rV4/R.Haris_Nauman" class="contact-btn" target="_blank" rel="noopener noreferrer">Epic Community</a>
+        <!-- Clients -->
+        <section id="clients">
+            <h2>Clients</h2>
+            <div class="client-container">
+                <img src="images/Ocean.jpg" alt="OceanX" class="client-logo">
+                <img src="images/SquareEnix.jpg" alt="Square Enix" class="client-logo">
+                <img src="images/MDEC.jpg" alt="MDEC" class="client-logo">
             </div>
         </section>
-    </div>
+    </main>
 </body>
+
 </html>
