@@ -33,11 +33,21 @@ const navigation = `
 const nav = document.querySelector("nav");
 nav.innerHTML = navigation;
 
-// Highlight current page
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const currentPath = window.location.pathname.replace(/\/$/, "");
 
-nav.querySelectorAll("a").forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
+const currentPage = currentPath === "" ? "index" : currentPath.split("/").pop().replace(/\.html$/, "");
+
+nav.querySelectorAll("a").forEach(link => {const href = link.getAttribute("href");
+    // Ignore external links
+    if (!href || href.startsWith("http")) {
+        return;
+    }
+
+    const linkPage = href
+        .replace(/\.html$/, "")
+        .replace(/\/$/, "");
+
+    if (linkPage === currentPage) {
         link.classList.add("active");
     }
 });
